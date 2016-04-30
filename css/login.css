@@ -1,7 +1,41 @@
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+body {
+    background: #227F9A;
+    color: white;
+    position: relative;
+    min-height: 100%; 
+}
+.form {
+    padding-top: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;  
+}
+.form.signin {
+    height: 190px;
+    width: 481px;
+    margin: 200px auto auto auto;   
+}
 
-  display: flex;
-  align-items: center;
+#username {
+    color: black;
+    margin: 10px;
+    display: block;
+    height: 40px;
+    width: 463px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#password {
+    color: black;
+    margin: 10px;
+    display: block;
+    height: 40px;
+    width: 463px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+#submit {
+    margin-left: 10px;
 }
