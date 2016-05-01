@@ -37,7 +37,7 @@
                         <li><a href="#">Terms Info</a></li>
                     </ul>
                 </li>
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Students List</a></li>
@@ -46,7 +46,7 @@
                         <li><a href="#">Guardians</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Teachers</a></li>
+                <li class="active"><a href="#">Teachers</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -72,121 +72,128 @@
     <div class="container">
         <!-- Content Section - 2 side-by-side pannels containing form elelments -->
         <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <p>Student Info</p>
+            <form class="form-horizontal">
+                <div class="col-md-6">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <p>Guardian Information</p>
+                        </div>
+                        <div class=panel-body>
+
+                                <div class="form-group">
+                                    <label for="firstname" class="col-sm-3 control-label">Title</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control">
+                                            <option>Mr</option>
+                                            <option>Mrs</option>
+                                            <option>Dr</option>
+                                            <option>Ms</option>
+                                            <option>Rev</option>
+                                            <option>Hon</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="firstname" class="col-sm-3 control-label">First Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="firstname" placeholder="First name...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middlename" class="col-sm-3 control-label">Middle Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="middlename" placeholder="Middle name...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="surname" class="col-sm-3 control-label">Surname</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="surname" placeholder="Surname...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone1" class="col-sm-3 control-label">Telephone 1</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="telephone1" placeholder="Telephone 2...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone2" class="col-sm-3 control-label">Telephone 2</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="telephone2" placeholder="Telephone 2...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address1" class="col-sm-3 control-label">Address 1</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="address1" placeholder="Address 1...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address2" class="col-sm-3 control-label">Address 2</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="address2" placeholder="Address 2...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country" class="col-sm-3 control-label">Country</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="country" placeholder="Country...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="skype" class="col-sm-3 control-label">Skype</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="skype" placeholder="Skype ID...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-3 control-label">Email</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="email" placeholder="Email address...">
+                                    </div>
+                                </div>
+
+                        </div>
                     </div>
-                    <div class=panel-body>
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="firstname" class="col-sm-3 control-label">First Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="firstname" placeholder="First name...">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="middlename" class="col-sm-3 control-label">Middle Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="middlename" placeholder="Middle name...">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="surname" class="col-sm-3 control-label">Surname</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="surname" placeholder="Surname...">
-                                </div>
-                            </div>
-
-                            <!--place holder for image -->
-
-                            <div class="radio-inline col-sm-3 col-sm-offset-3">
-                                <label>
-                                    <input type="radio" name="gender" id="gender" value="male" checked>
-                                    Male
-                                </label>
-                            </div>
-                            <div class="radio-inline col-sm-3">
-                                <label>
-                                    <input type="radio" name="gender" id="gender" value="female">
-                                    Female
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="dob" class="col-sm-3 control-label">Birthday</label>
-                                <div class="col-sm-9">
-                                    <input type="date" class="form-control" id="dob" placeholder="Surname...">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="allergies" class="col-sm-3 control-label">Allergies</label>
-                                <div class="col-sm-9">
-                                    <textarea id="allegies" class="form-control" rows="3" placeholder="Allegies..."></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="specialneeds" class="col-sm-3 control-label">Special Needs</label>
-                                <div class="col-sm-9">
-                                    <textarea id="specialneeds" class="form-control" rows="3" placeholder="Special needs..."></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="comments" class="col-sm-3 control-label">Comments</label>
-                                <div class="col-sm-9">
-                                    <textarea id="comments" class="form-control" rows="3" placeholder="Comments..."></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Save <span class="glyphicon glyphicon-ok-circle"></span></button>
-    <button type="reset" class="btn btn-default">Cancel <span class="glyphicon glyphicon-remove-circle"></span></button>
-                        </form>
-
+                </div>        
+                <!-- Related student(s) information -->
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p>Student(s)</p>
+                        </div>
+                        <table class="table table-bordered">
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>Class</th>
+                            <th>Action</th>
+                            <tr>
+                                <td>Otiyelhelha</td>
+                                <td>Chaguluka</td>
+                                <td>Nursery</td>
+                                <td>
+                                    <a href="#"><span class="glyphicon glyphicon-info-sign"></span></a>
+                                    <a href="#"><span class="glyphicon glyphicon-remove-sign"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kaluche</td>
+                                <td>Chaguluka</td>
+                                <td>Pre-nursery</td>
+                                <td>
+                                    <a href="#"><span class="glyphicon glyphicon-info-sign"></span></a> 
+                                    <a href="#"><span class="glyphicon glyphicon-remove-sign"></span></a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- panel with table -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <p>Guardian(s)</p>
-                    </div>
-                    <table class="table table-bordered">
-                        <th>First Name</th>
-                        <th>Surname</th>
-                        <th>Phone1</th>
-                        <th>Phone2</th>
-                        <th>Relationship</th>
-                        <th>Action</th>
-                        <tr>
-                            <td>Chinga</td>
-                            <td>Chaguluka</td>
-                            <td>0999989777</td>
-                            <td>0888689777</td>
-                            <td>Father</td>
-                            <td>
-                                <a href="#"><span class="glyphicon glyphicon-info-sign"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-remove-sign"></span></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Jessie</td>
-                            <td>Kachule</td>
-                            <td>0999950026</td>
-                            <td>0888950026</td>
-                            <td>Mohter</td>
-                            <td>
-                                <a href="#"><span class="glyphicon glyphicon-info-sign"></span></a> 
-                                <a href="#"><span class="glyphicon glyphicon-remove-sign"></span></a>
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
-                <button type="submit" class="btn btn-primary">Add Guardian <span class="glyphicon glyphicon-plus-sign"></span></button>
+                </div>    
+            </form>
         </div>
     </div>
-    </div>
-           
-    
     
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
